@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Inetbanking]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="packagesListners.ListnersTesting"/>
+  </listeners>
+  <test name="Banking app test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ebanking.TestCases.TC_LoginPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="loginpages123"/>
+          <include name="loginWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.ebanking.TestCases.TC_LoginPageTest -->
+    </classes>
+  </test> <!-- Banking app test(failed) -->
+</suite> <!-- Failed suite [Inetbanking] -->
